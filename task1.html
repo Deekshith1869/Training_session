@@ -1,0 +1,153 @@
+<html>
+<head>
+    <title> Tasks </title>
+</head>
+<body>
+    <style>
+        table{
+            width: 100%;
+        }
+    </style> 
+    <h1>Task 1</h1>
+    <table border="1">
+        <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Jill</th>
+                <th>Smith</th>
+                <th>50</th>
+            </tr>
+            <tr>
+                <th>Eve</th>
+                <th>Jackson</th>
+                <th>94</th>
+            </tr>
+            <tr>
+                <th>John</th>
+                <th>Doe</th>
+                <th>80</th>
+            </tr>
+        </tbody>
+    </table><br><br>
+    <h1>Task2</h1>
+    <h2>Nested list</h2>
+    <h3>Lists can be nested</h3>
+    <ul>
+        <li>Coffe</li>
+        <li>Tea
+            <ul>
+                <li>Black tea</li>
+                <li>Green tea</li>
+            </ul>
+        </li>
+        <li>Milk</li>
+    </ul>
+    <p>Click the following links</p>
+    <a href="#" target="_blank">Open in new</a>
+    <a href="#" target="_self">Opens in self</a>
+    <a href="#" target="_parent">Opens in Parent</a>
+    <a href="#" target="_body">Open in Body</a>
+</body><br>
+<br>
+
+<body>
+    <h1>Task3</h1><br>
+    <form>
+        <h2>Registration Form</h2>
+        <table border="2">
+            <tr>
+                <td><label for="fname">First Name:</label></td>
+                <td><input type="text" id="fname" name="firstname" placeholder="Enter your first name"></td>
+            </tr>
+            <tr>
+                <td><label for="lname">Last Name:</label></td>
+                <td><input type="text" id="lname" name="lastname" placeholder="Enter your last name"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" placeholder="Enter your email"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password" placeholder="Enter your password"></td>
+            </tr>
+            <tr>
+                <td><label for="repassword">Re-enter Password:</label></td>
+                <td><input type="password" id="repassword" name="repassword" placeholder="Re-enter your password"></td>
+            </tr>
+            <tr>
+                <td><label>Gender:</label></td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="age">Age:</label></td>
+                <td><input type="text" id="age" name="age" placeholder="Enter your age"></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="text" id="phone" name="phone" placeholder="Enter your phone number"></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><textarea id="address" name="address" placeholder="Enter your address"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="state">State:</label></td>
+                <td><input type="text" id="state" name="state" placeholder="Enter your state"></td>
+            </tr>
+            <tr>
+                <td><label for="country">Country:</label></td>
+                <td>
+                    <select id="country" name="country">
+                        <option value="">Choose your country</option>
+                        <option value="usa">USA</option>
+                        <option value="canada">Canada</option>
+                        <option value="uk">UK</option>
+                        <option value="india">India</option>
+                        <option value="other">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Languages known:</label></td>
+                <td>
+                    <input type="checkbox" id="english" name="language" value="english">
+                    <label for="english">English</label>
+                    <input type="checkbox" id="kannada" name="language" value="kannada">
+                    <label for="kannada">Kannada</label>
+                    <input type="checkbox" id="hindi" name="language" value="hindi">
+                    <label for="hindi">Hindi</label>
+                    <input type="checkbox" id="telugu" name="language" value="telugu">
+                    <label for="telugu">Telugu</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" id="declaration" name="declaration">
+                    <label for="declaration">Hereby I declare all the given details are true</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <a href="#">Log in to Acharya website</a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="submit">Register</button></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

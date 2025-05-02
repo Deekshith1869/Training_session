@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task4</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 100px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #aeaeae;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidenav a {
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            margin: 5px;
+            transition: 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .sidenav a:hover {
+            width: 200px;
+        }
+
+        .sidenav a span {
+            white-space: nowrap;
+            padding-left: 10px;
+        }
+
+        .sidenav a:nth-child(1) {
+            background-color: green;
+            color: whitesmoke;
+        }
+
+        .sidenav a:nth-child(2) {
+            background-color: blue;
+            color: whitesmoke;
+        }
+
+        .sidenav a:nth-child(3) {
+            background-color: red;
+            color: whitesmoke;
+        }
+
+        .sidenav a:nth-child(4) {
+            background-color: grey;
+            color: whitesmoke;
+        }
+
+        .main-content {
+            margin-left: 120px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidenav">
+            <a href="#"><span>Home</span></a>
+            <a href="#"><span>HTML</span></a>
+            <a href="#"><span>CSS</span></a>
+            <a href="#"><span>Bootstrap</span></a>
+        </div>
+        <div class="main-content">
+            <h2>Hoverable Sidenav Buttons</h2>
+            <p>Hover over the buttons in the left side navigation to open them.</p>
+        </div>
+    </div>
+</body>
+</html>
