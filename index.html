@@ -1,85 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tasks Page</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Links</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous"
     />
     <style>
-      .container {
-        text-decoration: none;
-      }
-      .link-box {
-        display: inline-block;
-        padding: 15px 25px;
-        margin: 10px;
-        border: 2px solid #007bff;
-        border-radius: 8px;
-        text-decoration: none;
-        color: #007bff;
-        font-weight: bold;
-        background-color: #f0f8ff;
-        transition: all 0.3s ease;
-      }
-      .link-box:hover {
-        background-color: #007bff;
-        color: white;
-      }
+        .link-box {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 5px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            background-color: #f0f8ff;
+            transition: all 0.3s ease;
+        }
+        .link-box:hover {
+            background-color: #007bff;
+            color: white;
+        }
+        .task-table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        .task-table th, .task-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .task-table th {
+            background-color: #f2f2f2;
+        }
+        .task-table tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .task-table tbody tr:hover {
+            background-color: #e0e0e0;
+        }
     </style>
-  </head>
-  <body>
-    <h1>HTML Tasks</h1>
-    <div class="container">
-      <a href="task1.html" class="text-decoration-none text-danger link-box"
-        >Task 1 , 2 and 3</a
-      >
-      <br />
-    <h1>CSS Tasks</h1>
-    <div class="container">
-      <a href="css1.html" class="text-decoration-none text-danger link-box"
-        >Task 1 , 2 and 3</a
-      >
-      <br />
-      <a href="css4.html" class="text-decoration-none text-danger link-box"
-        >Task 4</a
-      >
-      <br />
-      <a href="css2.html" class="text-decoration-none text-danger link-box"
-        >Task 5</a
-      >
-      <br />
-      <a href="css3.html" class="text-decoration-none text-danger link-box"
-        >Task 6</a
-      >
-      <br />
-    </div>
-    <h1>Bootstrap Tasks</h1>
-    <div class="container">
-      <a href="bss3.html" class="text-decoration-none text-danger link-box"
-        >Task 1</a
-      >
-      <br />
-      <a href="bss5.html" class="text-decoration-none text-danger link-box"
-        >Task 2</a
-      >
-      <br />
-      <a href="bss2.html" class="text-decoration-none text-danger link-box"
-        >Task 3</a
-      >
-      <br />
-      <a href="bs1.html" class="text-decoration-none text-danger link-box"
-        >Task 4</a
-      >
-      <br />
-      <a href="bss4.html" class="text-decoration-none text-danger link-box"
-        >Task 5</a
-      >
-      <br />
-    </div>
-  </body>
+</head>
+<body>
+    <h1>Task Links</h1>
+    <table class="task-table">
+        <thead>
+            <tr>
+                <th>Task</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML Tasks 1-3</td>
+                <td><a href="task1.html" class="link-box">View </a></td>
+            </tr>
+            <tr>
+                <td>CSS Tasks 1-3</td>
+                <td><a href="css1.html" class="link-box">View </a></td>
+            </tr>
+            <tr>
+                <td>CSS Task 4</td>
+                <td><a href="css4.html" class="link-box">View </a></td>
+            </tr>
+            <tr>
+                <td>CSS Task 5</td>
+                <td><a href="css2.html" class="link-box">View </a></td>
+            </tr>
+            <tr>
+                <td>CSS Task 6</td>
+                <td><a href="css3.html" class="link-box">View </a></td>
+            </tr>
+            <tr>
+                <td>Bootstrap 1</td>
+                <td><a href="bss3.html" class="link-box">View </a></td>
+            </tr>
+            <tr>
+                <td>Bootstrap 2</td>
+                <td><a href="bss5.html" class="link-box">View </a></td>
+            </tr>
+            <tr>
+                <td>Bootstrap 3</td>
+                <td><a href="bss2.html" class="link-box">View </a></td>
+            </tr>
+            <tr>
+                <td>Bootstrap 4</td>
+                <td><a href="bs1.html" class="link-box">View </a></td>
+            </tr>
+            <tr>
+                <td>Bootstrap 5</td>
+                <td><a href="bss4.html" class="link-box">View </a></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
 </html>
